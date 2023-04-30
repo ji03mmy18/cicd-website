@@ -35,5 +35,5 @@ jobs:
       - name: Webhook Trigger
         uses: distributhor/workflow-webhook@v3
         env:
-          webhook_url: 'http://35.196.177.195:9000/hooks/cicd_deploy'
+          webhook_url: 'http://35.196.177.195:9000/hooks/cicd-deploy'
           response-body: 'OK!'
