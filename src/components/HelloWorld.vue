@@ -18,6 +18,7 @@ const count = ref(0)
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
+  <p>Small Message From YoMin: Update Success</p>
 </template>
 
 <style scoped>

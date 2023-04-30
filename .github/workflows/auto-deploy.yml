@@ -27,3 +27,12 @@ jobs:
         with:
           push: true
           tags: ghcr.io/ji03mmy18/cicd-website:latest
+  
+  cd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Webhook Trigger
+        uses: distributhor/workflow-webhook@v3
+        env:
+          webhook_url: ${{ http://35.196.177.195:9000/hooks/cicd_deploy }}
+          response-body: 'OK!'
